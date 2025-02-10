@@ -60,7 +60,8 @@ body {
     display: flex;
     justify-content: space-evenly;
     background-color: pink;
-    width: 620px;
+    width: 100%;
+    max-width: 600px;
     height: 40px;
     border-radius: 4px;
 }
@@ -144,8 +145,11 @@ span {
 /** hero section **/
 .hero-section {
     background-image: url("img1.jpg");
-    background-size: cover;
-    height: 350px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+    min-height: 250px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -272,6 +276,8 @@ ul p {
     }
     .navbar {
         flex-direction: column;
+         height: auto;
+        padding: 10px 0;
     }
     .product-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -291,3 +297,14 @@ ul p {
         text-align: center;
     }
 }
+@media (max-width: 1024px) {
+    .box {
+        width: 45%;
+    }
+}
+@media (max-width: 768px) {
+    .box {
+        width: 90%;
+    }
+}
+
