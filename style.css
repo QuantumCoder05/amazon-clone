@@ -148,8 +148,7 @@ span {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    height: auto;
-    min-height: 250px;
+    height: 350px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
