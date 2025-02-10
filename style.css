@@ -145,7 +145,7 @@ span {
 /** hero section **/
 .hero-section {
     background-image: url("img1.jpg");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     height: 350px;
@@ -268,18 +268,30 @@ ul p {
 }
 
 /** Responsive Design **/
+
+@media (max-width: 1024px) {
+    .box {
+        width: 48%;
+    }
+}
+
 @media (max-width: 768px) {
     .container {
         width: 90%;
         flex-direction: column;
+        display: flex;
     }
     .navbar {
         flex-direction: column;
-         height: auto;
+        height: auto;
         padding: 10px 0;
+        text-align: center;
     }
     .product-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+    .box {
+        width: 100%;
     }
 }
 
@@ -291,19 +303,6 @@ ul p {
     .product-grid {
         grid-template-columns: repeat(1, 1fr);
     }
-    .navbar {
-        flex-direction: column;
-        text-align: center;
-    }
 }
-@media (max-width: 1024px) {
-    .box {
-        width: 45%;
-    }
-}
-@media (max-width: 768px) {
-    .box {
-        width: 90%;
-    }
-}
+
 
